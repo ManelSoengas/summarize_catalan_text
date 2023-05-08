@@ -28,7 +28,7 @@ from nltk.tag import pos_tag
 from nltk.chunk import ne_chunk
 ```
 S'introdueix el text a resumir.
-···
+```
 # Introducción del texto a resumir
 text = """ L'Institut Català de Tecnologia ha informat de l'augment del nombre de persones que utilitzen Internet per comprar productes. 
 És evident que el mitjà informàtic permet estalviar temps en moltes activitats diàries, a més d'evitar desplaçaments. 
@@ -40,8 +40,19 @@ Joan García Petit.
 Tàrrega"""
 palabras = word_tokenize(text)
 frases = sent_tokenize(text)
-···
+```
 Visualització de les paraules tokenizdas
-···
+```
 print(palabras)
-···
+```
+Es calcula la freqüència de cada paraula i es mira que no estigui al llistat de stopwords.
+```
+freqTabla = {}
+for word in palabras:
+    word = word.lower()
+    if word not in stops:
+        if word in freqTabla:
+            freqTabla[word] += 1
+        else:
+            freqTabla[word] = 1
+```
