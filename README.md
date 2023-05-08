@@ -2,6 +2,8 @@
 Generador de resúmenes automático para el idioma catalán
 Implementació en Python d'un senzill generador de resumens automátic per un text en Català.
 A la carpeta colab hi ha l'arxiu per pujar-lo a google colab.
+A l'exemple s'utilitzen models pre-entrenats. Models que han estat entrenats mitjançant enfocs basats en IA.
+Prperament, veurem algún exemple d'entrenament d'un model per utilitzar-lo a una tasca determinada.
 ```
 #Carga de la libreria y modelo
 # para el idioma.
