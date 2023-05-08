@@ -21,9 +21,9 @@ print(stops)
 nltk.download('punkt')
 ```
 A continuació es carreguen els mòduls necessaris.
-...
+```
 #Importación de los módulos necesarios
 from nltk.tokenize import word_tokenize, sent_tokenize
 from nltk.tag import pos_tag
 from nltk.chunk import ne_chunk
-...
+```
